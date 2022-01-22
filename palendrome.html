@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript - Palindrome</h1>
+<p>Type a string or number to check whether it is a Palendrome or not.</p>
+<input type="text" id="input1">
+<button type="button" onclick="check()">CHECK</button>
+<p id="demo"></p>
+
+<script>
+function check(){
+let val1 = "", val2 = "";
+val1 = document.getElementById("input1").value;
+val2 = val1.toString().split("").reverse().join("");
+val1.toString();
+
+	if(val1 == val2){
+		document.getElementById("demo").innerHTML = "Yes, Palindrome "+val1;
+	} else {
+    	document.getElementById("demo").innerHTML = "Not a Palindrome "+val1;
+    }
+}
+</script>
+</body>
+</html>
